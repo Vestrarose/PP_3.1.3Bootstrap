@@ -128,7 +128,7 @@
 
                                 <strong><label for="editLastName">Last Name</label></strong><br>
                                 <input type="text" class="form-control"
-                                       th:value="${user.age}" id="editLastName" name="lastname"
+                                       th:value="${user.lastname}" id="editLastName" name="lastname"
                                        required min="3" max="20"><br>
 
                                 <strong><label for="editAge">Age</label></strong><br>
@@ -144,7 +144,7 @@
                                 <strong><label
                                         for="editPassword">Password</label></strong><br>
                                 <input type="password" class="form-control"
-                                       th:value="null"
+                                       th:value="${user.password}"
                                        id="editPassword" name="password"><br>
 
                                 <select multiple class="form-control w-100"

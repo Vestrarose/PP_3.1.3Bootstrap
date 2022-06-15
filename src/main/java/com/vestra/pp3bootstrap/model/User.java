@@ -18,6 +18,7 @@ public class User implements UserDetails {
     private int age;
     private String email;
     private String pass;
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "users_roles",
